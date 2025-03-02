@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Classifier</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        h1 { color: #333; }
+        form { margin: 20px; }
+        img { max-width: 300px; margin-top: 20px; border-radius: 10px; }
+        .result { margin-top: 20px; font-size: 20px; color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Fruit Classifier 🍎🍌🍊</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit">Upload & Predict</button>
+    </form>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if uploaded_image %}
+        <h3>Uploaded Image:</h3>
+        <img src="{{ uploaded_image }}" alt="Uploaded Image">
+        <p class="result">Prediction: <strong>{{ label }}</strong></p>
+    {% endif %}
+</body>
+</html>
