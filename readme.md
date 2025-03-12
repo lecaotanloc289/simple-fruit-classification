@@ -24,14 +24,16 @@ cd simple-fruit-classification
 2️⃣ Install Required Libraries
 
 1. Create vitual environment
-```python -m venv venv```
+```
+python -m venv venv
+```
 
-2. Activate vitual environment
-Windows: 
+3. Activate vitual environment
+- Windows: 
 ```
 venv\Scripts\activate
 ```
-MacOS: 
+- MacOS: 
 ```
 source venv/bin/activate
 ```
