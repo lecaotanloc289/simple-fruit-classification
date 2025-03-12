@@ -11,7 +11,7 @@ from sklearn.metrics import classification_report
 
 # Step 1: Define Dataset Path
 dataset_path = "data/train"  
-datatest_path = "data/test"  
+datatest_path = "data/test"
 
 # Step 2: Preprocess Data
 img_size = (100, 100) 
