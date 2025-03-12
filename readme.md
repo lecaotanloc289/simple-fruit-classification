@@ -28,15 +28,25 @@ cd simple-fruit-classification
 
 2. Activate vitual environment
 Windows: 
-```venv\Scripts\activate```
+```
+venv\Scripts\activate
+```
 MacOS: 
-```source venv/bin/activate```
+```
+source venv/bin/activate
+```
 
-3. Install requirement dependencies
-```pip install -r requirement.txt```
+4. Install requirement dependencies
+```
+pip install -r requirement.txt
+```
 
-4. Run training model
-```python train.py```
+6. Run training model
+```
+python train.py
+```
 
-5. Run application Flask
-```python app.py```
+8. Run application Flask
+```
+python app.py
+```
